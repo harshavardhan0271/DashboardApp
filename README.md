@@ -1,69 +1,46 @@
-# React + TypeScript + Vite
+Overview 📊
+A responsive dashboard built with React and TypeScript that displays user comments with sorting, searching, and pagination functionality. The app features:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ Comments dashboard with 500+ entries
 
-Currently, two official plugins are available:
+ User profile view
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Search functionality
 
-## Expanding the ESLint configuration
+ Sorting capabilities
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ Pagination controls
+ 
+ Persistent state management
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Features 
+Dashboard Features
+Pagination - Browse through comments with 10, 50, or 100 items per page
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Sorting - Sort by Post ID, Name, or Email (click headers to cycle through sort options)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Search - Find comments by name, email, or body text
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+State Persistence - Your view settings are saved between page refreshes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Profile Features
+Displays detailed information about the first user from the API
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Shows contact information, address, and company details
+
+Installation 🛠️
+Prerequisites:
+
+Node.js (v14 or higher recommended)
+
+npm or yarn
+
+Setup:
+
+bash
+git clone https://github.com/harshavardhan0271/DashboardApp.git
+cd dashboard-app
+npm install
+Running the App:
+npm run dev
+The app will open in your default browser at http://localhost:3000
