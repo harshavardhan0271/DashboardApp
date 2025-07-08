@@ -1,4 +1,4 @@
-Overview 📊
+
 A responsive dashboard built with React and TypeScript that displays user comments with sorting, searching, and pagination functionality. The app features:
 
  Comments dashboard with 500+ entries
